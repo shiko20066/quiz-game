@@ -1,0 +1,218 @@
+#question {
+  white-space: pre-wrap;
+  /* [!!] التعديل الجديد لإجبار الاتجاه العربي */
+  direction: rtl;
+  text-align: right;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.level-impossible #question {
+  border: 1px solid var(--main-accent-color);
+  animation: glow 1.5s infinite alternate;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid var(--main-hover-color);
+  background-color: white; /* اللون الأساسي */
+}
+/* لون الاختيارات في مرحلة المستحيل (الأساسي) */
+.level-impossible .choice-container {
+  background-color: #1a1a1a;
+  border-color: #444;
+}
+.level-impossible .choice-container:hover {
+  border-color: var(--main-accent-color);
+}
+/* ستايل لإخفاء الاختيار (لوسيلة 50/50) */
+.choice-container.hidden-choice {
+  opacity: 0;
+  pointer-events: none;
+}
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 var(--main-hover-color);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: var(--main-choice-prefix-bg);
+  color: white;
+  transition: background-color 0.5s ease;
+}
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+  /* [!!] التعديل الجديد لإجبار الاتجاه العربي */
+  direction: rtl;
+  text-align: right;
+}
+
+/* --- الحل النهائي لمشكلة الألوان --- */
+.choice-container.correct {
+  background-color: #28a745; /* أخضر */
+}
+.choice-container.incorrect {
+  background-color: #dc3545; /* أحمر */
+}
+.choice-container.correct .choice-prefix,
+.choice-container.correct .choice-text,
+.choice-container.incorrect .choice-prefix,
+.choice-container.incorrect .choice-text {
+  color: white; 
+}
+/* ------------------------------------- */
+
+/* HUD */
+#hud {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+#hud-item-full {
+  width: 100%;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+#hud-item-full .hud-prefix {
+  font-size: 1.6rem;
+}
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--main-accent-color);
+  transition: transform 0.3s, font-size 0.3s; /* عشان التغيير يبقى ناعم */
+}
+.hud-main-text {
+  text-align: center;
+  color: var(--main-accent-color);
+}
+
+/* تطبيق أنيميشن الاهتزاز (Shake) */
+.level-impossible #levelText {
+  animation: glow 1.5s infinite alternate, shake 0.5s infinite;
+}
+
+/* تكبير ورفع كلمة "المرحلة" */
+.level-impossible #level-prefix {
+  font-size: 2.4rem; /* تكبير */
+  font-weight: bold;
+  transform: translateY(-5px); /* رفعها لفوق */
+}
+
+
+#progressBar {
+  width: 100%; 
+  height: 2.5rem; 
+  border: 0.2rem solid var(--main-accent-color);
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+#progressBarFull {
+  height: 100%; 
+  background-color: var(--main-accent-color);
+  width: 0%; 
+  transition: width 0.5s ease, background-color 0.5s ease;
+  border-radius: 8px;
+}
+
+/* LOADER */
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid var(--main-accent-color);
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ستايل المؤقت */
+#timer {
+  width: 6rem;
+  height: 6rem;
+  border: 0.3rem solid var(--main-accent-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.level-impossible #timer {
+  animation: glow 1.5s infinite alternate;
+}
+#timer-text {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--main-accent-color);
+}
+
+/* ستايل زرار وسيلة المساعدة */
+.btn-lifeline {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  width: 15rem;
+  margin: 0 auto 1.5rem auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+}
+.btn-lifeline span {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #888;
+}
+.level-impossible .btn-lifeline span {
+  color: #ccc;
+}
+
+/* إلغاء توهج المصباح المتحرك، وجعله "منور ثابت" */
+.level-impossible .btn-lifeline {
+  animation: none; /* إلغاء الأنيميشن الموروث */
+  color: var(--main-accent-color);
+  /* توهج ثابت */
+  box-shadow: 0 0 10px 2px var(--main-glow-color), 0 0 20px 2px var(--main-glow-color);
+}
+
+
+/* ---------------------------------- */
+/* [!!] كود التجاوب مع الموبايل [!!] */
+/* ---------------------------------- */
+@media (max-width: 768px) {
+  #hud {
+    /* [!!] أهم تعديل: هيخلي العدادات تحت بعض */
+    flex-direction: column; 
+    align-items: center;
+    gap: 1.5rem; /* مسافة بينهم */
+  }
+
+  .choice-container {
+    font-size: 1.6rem; /* تصغير خط الاختيارات */
+  }
+  .choice-prefix {
+    padding: 1.2rem 2rem; /* تقليل الحشو */
+  }
+  .choice-text {
+    padding: 1.2rem;
+  }
+
+  #progressBar {
+    height: 2rem; /* تقليل ارتفاع شريط التقدم */
+  }
+
+  #timer {
+    width: 5.5rem; /* تصغير المؤقت */
+    height: 5.5rem;
+  }
+  #timer-text {
+    font-size: 2.4rem;
+  }
+}

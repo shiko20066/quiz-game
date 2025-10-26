@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Quiz - Login</title>
+    <link rel="stylesheet" href="App.css" />
+    <link rel="stylesheet" href="login.css" /> </head>
+<body>
+    <div class="container">
+        <div id="login-box" class="flex-center flex-column">
+            
+            <h1 class="login-title">
+                Quiz <span>&lt;</span>HTML<span>&gt;</span> Game
+            </h1>
+            
+            <form id="loginForm">
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Username"
+                />
+                <p id="usernameError" class="hidden">الرجاء إدخال اسم مستخدم صالح.</p>
+                <button
+                    type="submit"
+                    class="btn"
+                    id="registerBtn"
+                >
+                    تسجيل الدخول
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

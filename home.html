@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Quiz - Home</title>
+    <link rel="stylesheet" href="App.css" />
+    <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            
+            <div id="profile-box">
+                <div class="profile-pic-container">
+                    <img id="profile-pic" alt="Profile Picture" />
+                    <input type="file" id="file-input" accept="image/*" class="hidden" />
+                </div>
+                <button id="change-pic-btn">تغيير الصورة</button>
+                <h2 id="welcome-username">أهلاً، ...</h2>
+            </div>
+
+            <div id="highest-score-box" class="hidden">
+                <h3>أعلى نتيجة مسجلة</h3>
+                <div id="highest-score-content">
+                    <img id="hs-pic" alt="P">
+                    <div id="hs-name">...</div>
+                    <div id="hs-level">...</div>
+                    <div id="hs-value">...</div>
+                </div>
+            </div>
+
+            <a class="btn" href="game.html">ابدأ اللعب</a>
+            <a class="btn btn-danger" id="logoutBtn">تسجيل الخروج</a>
+
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+{
+  "easy": [
+    {
+      "question": "ما هو التاج الأساسي لـ \"أكبر عنوان\" في الصفحة؟",
+      "choice1": "<h6>",
+      "choice2": "<head>",
+      "choice3": "<h1>",
+      "choice4": "<title>",
+      "answer": 3
+    },
+    {
+      "question": "ما هو التاج المستخدم لكتابة \"فقرة\" نصية؟",
+      "choice1": "<p>",
+      "choice2": "<paragraph>",
+      "choice3": "<pre>",
+      "choice4": "<strong>",
+      "answer": 1
+    },
+    {
+      "question": "ما هو التاج الصحيح لإضافة \"صورة\" للموقع؟",
+      "choice1": "<image>",
+      "choice2": "<img>",
+      "choice3": "<pic>",
+      "choice4": "<src>",
+      "answer": 2
+    },
+    {
+      "question": "لجعل النص \"عريض\" (Bold)، نستخدم التاج؟",
+      "choice1": "<b>",
+      "choice2": "<bold>",
+      "choice3": "<br>",
+      "choice4": "<i>",
+      "answer": 1
+    },
+    {
+      "question": "ما هو التاج المستخدم لإنشاء \"رابط\" (Link)؟",
+      "choice1": "<link>",
+      "choice2": "<a>",
+      "choice3": "<href>",
+      "choice4": "<nav>",
+      "answer": 2
+    },
+    {
+      "question": "ما هو التاج المستخدم لـ \"تسطير\" النص (Underline)؟",
+      "choice1": "<u>",
+      "choice2": "<i>",
+      "choice3": "<s>",
+      "choice4": "<line>",
+      "answer": 1
+    },
+    {
+      "question": "لإضافة \"سطر جديد\" (Line Break) نستخدم؟",
+      "choice1": "<break>",
+      "choice2": "<lb>",
+      "choice3": "<br>",
+      "choice4": "<new>",
+      "answer": 3
+    },
+    {
+      "question": "ما هو التاج الذي يحتوي على كل محتوى الصفحة \"المرئي\"؟",
+      "choice1": "<body>",
+      "choice2": "<head>",
+      "choice3": "<html>",
+      "choice4": "<title>",
+      "answer": 1
+    },
+    {
+      "question": "ما هو التاج المستخدم لـ \"عنوان\" صفحة الويب (يظهر في التاب)؟",
+      "choice1": "<h1>",
+      "choice2": "<head>",
+      "choice3": "<title>",
+      "choice4": "<meta>",
+      "answer": 3
+    },
+    {
+      "question": "ما هو التاج المستخدم لكتابة تعليق (Comment) في كود HTML؟",
+      "choice1": "// تعليق",
+      "choice2": "!--!",
+      "choice3": "/* تعليق */",
+      "choice4": "<comment> تعليق </comment>",
+      "answer": 2
+    }
+  ],
+  "medium": [
+    {
+      "question": "ما هي الخاصية (Attribute) التي تحدد \"الرابط\" الذي سيذهب إليه التاج <a>؟",
+      "choice1": "src",
+      "choice2": "link",
+      "choice3": "target",
+      "choice4": "href",
+      "answer": 4
+    },
+    {
+      "question": "لفتح الرابط في \"نافذة جديدة\"، نستخدم خاصية `target` بقيمة؟",
+      "choice1": "_blank",
+      "choice2": "_new",
+      "choice3": "_window",
+      "choice4": "_self",
+      "answer": 1
+    },
+    {
+      "question": "ما هو التاج المستخدم لإنشاء \"قائمة غير مرتبة\" (نقط)؟",
+      "choice1": "<ol>",
+      "choice2": "<li>",
+      "choice3": "<ul>",
+      "choice4": "<list>",
+      "answer": 3
+    },
+    {
+      "question": "ما هو التاج المستخدم لإنشاء \"جدول\"؟",
+      "choice1": "<table>",
+      "choice2": "<tab>",
+      "choice3": "<tr>",
+      "choice4": "<td>",
+      "answer": 1
+    },
+    {
+      "question": "داخل الجدول، التاج <tr> يمثل \"صف\" (Row)، فماذا يمثل التاج <td>؟",
+      "choice1": "عنوان الجدول (Title)",
+      "choice2": "عمود (Column)",
+      "choice3": "خلية بيانات (Data Cell)",
+      "choice4": "رأس الجدول (Header)",
+      "answer": 3
+    },
+    {
+      "question": "ما هو التاج المستخدم لإنشاء \"قائمة مرتبة\" (أرقام)؟",
+      "choice1": "<ul>",
+      "choice2": "<ol>",
+      "choice3": "<list>",
+      "choice4": "<dl>",
+      "answer": 2
+    },
+    {
+      "question": "ما هي الخاصية (Attribute) المستخدمة لتحديد \"مصدر\" الصورة <img>؟",
+      "choice1": "href",
+      "choice2": "link",
+      "choice3": "src",
+      "choice4": "img",
+      "answer": 3
+    },
+    {
+      "question": "ما هو التاج المستخدم لإنشاء \"زر\" (Button)؟",
+      "choice1": "<button>",
+      "choice2": "<input type=\"button\">",
+      "choice3": "كلاهما صحيح",
+      "choice4": "لا شيء مما سبق",
+      "answer": 3
+    },
+    {
+      "question": "ما هو التاج المستخدم لإدخال \"نص\" (Text Input) في فورم؟",
+      "choice1": "<input type=\"text\">",
+      "choice2": "<textfield>",
+      "choice3": "<textinput>",
+      "choice4": "<input type=\"textfield\">",
+      "answer": 1
+    },
+    {
+      "question": "ما هو التاج المستخدم لـ \"تجميع\" مجموعة من الخيارات (Radio Buttons)؟",
+      "choice1": "<group>",
+      "choice2": "<fieldset>",
+      "choice3": "<div>",
+      "choice4": "<radio-group>",
+      "answer": 2
+    }
+  ],
+  "hard": [
+    {
+      "question": "ما هو التاج المستخدم لتجميع المدخلات (Inputs) داخل \"فورم\"؟",
+      "choice1": "<input>",
+      "choice2": "<form>",
+      "choice3": "<fieldset>",
+      "choice4": "<label>",
+      "answer": 2
+    },
+    {
+      "question": "ما هو التاج الدلالي (Semantic) الصحيح لـ \"الشريط العلوي\" للموقع (Navigation Bar)؟",
+      "choice1": "<div>",
+      "choice2": "<navbar>",
+      "choice3": "<header>",
+      "choice4": "<nav>",
+      "answer": 4
+    },
+    {
+      "question": "ما الفرق الرئيسي بين التاجين <div> و <span>؟",
+      "choice1": "<div> للصور و <span> للنصوص",
+      "choice2": "<div> عنصر Block و <span> عنصر Inline",
+      "choice3": "<div> عنصر Inline و <span> عنصر Block",
+      "choice4": "لا يوجد فرق",
+      "answer": 2
+    },
+    {
+      "question": "ما هي الخاصية المستخدمة لـ \"النص البديل\" الذي يظهر إذا لم يتم تحميل الصورة <img>؟",
+      "choice1": "title",
+      "choice2": "alt",
+      "choice3": "placeholder",
+      "choice4": "src_error",
+      "answer": 2
+    },
+    {
+      "question": "لإدخال \"ملف كود\" JavaScript في صفحة HTML، نستخدم التاج؟",
+      "choice1": "<script src=\"...\">",
+      "choice2": "<js file=\"...\">",
+      "choice3": "<link rel=\"script\" href=\"...\">",
+      "choice4": "<style src=\"...\">",
+      "answer": 1
+    },
+    {
+      "question": "ما هو التاج الدلالي (Semantic) لـ \"الجزء السفلي\" من الصفحة (Footer)؟",
+      "choice1": "<bottom>",
+      "choice2": "<div>",
+      "choice3": "<footer>",
+      "choice4": "<section>",
+      "answer": 3
+    },
+    {
+      "question": "ما هو التاج المستخدم لتحديد \"عنوان\" لـ <fieldset>؟",
+      "choice1": "<title>",
+      "choice2": "<h1>",
+      "choice3": "<legend>",
+      "choice4": "<label>",
+      "answer": 3
+    },
+    {
+      "question": "لربط <label> بـ <input>، نستخدم خاصية `for` في ה-<label> وخاصية ... في ה-<input>؟",
+      "choice1": "name",
+      "choice2": "id",
+      "choice3": "label",
+      "choice4": "link",
+      "answer": 2
+    },
+    {
+      "question": "ما هو التاج المستخدم لتشغيل \"ملف صوتي\"؟",
+      "choice1": "<sound>",
+      "choice2": "<mp3>",
+      "choice3": "<audio>",
+      "choice4": "<media>",
+      "answer": 3
+    },
+    {
+      "question": "ما هو التاج المستخدم لتشغيل \"ملف فيديو\"؟",
+      "choice1": "<video>",
+      "choice2": "<movie>",
+      "choice3": "<media>",
+      "choice4": "<mp4>",
+      "answer": 1
+    }
+  ],
+  "impossible": [
+    {
+      "question": "عند استخدام <script>، ما الفرق بين `async` و `defer`؟",
+      "choice1": "async ينفذ قبل، و defer ينفذ بعد تحليل الصفحة",
+      "choice2": "defer ينفذ قبل، و async ينفذ بعد تحليل الصفحة",
+      "choice3": "الاثنين نفس الشيء",
+      "choice4": "async للـ CSS و defer للـ JS",
+      "answer": 1
+    },
+    {
+      "question": "ما هي وظيفة التاج <meta viewport>؟",
+      "choice1": "تحديد سرعة تحميل الصفحة",
+      "choice2": "تحديد وصف الصفحة لجوجل",
+      "choice3": "تحديد كيفية عرض الصفحة على الموبايل (Responsive)",
+      "choice4": "تحديد لغة الصفحة",
+      "answer": 3
+    },
+    {
+      "question": "ماذا تفعل خاصية `contenteditable=\"true\"` على أي عنصر HTML؟",
+      "choice1": "تجعل العنصر مخفي",
+      "choice2": "تجعل العنصر قابل للتحرير من قبل المستخدم",
+      "choice3": "تحذف العنصر",
+      "choice4": "تنسخ محتوى العنصر",
+      "answer": 2
+    },
+    {
+      "question": "ما هو التاج المستخدم لتضمين صفحة ويب \"داخل\" صفحة ويب أخرى؟",
+      "choice1": "<frame>",
+      "choice2": "<embed>",
+      "choice3": "<iframe>",
+      "choice4": "<include>",
+      "answer": 3
+    },
+    {
+      "question": "ما هي وظيفة `role=\"button\"` في ARIA؟",
+      "choice1": "تغير لون الزر",
+      "choice2": "تجعل أي عنصر (مثل <div>) يعمل كـ \"زر\" لبرامج قراءة الشاشة (Accessibility)",
+      "choice3": "تضيف أيقونة للزر",
+      "choice4": "تخفي الزر تماماً",
+      "answer": 2
+    },
+    {
+      "question": "ما هو التاج المستخدم لرسم \"أشكال\" (Graphics) باستخدام JavaScript؟",
+      "choice1": "<canvas>",
+      "choice2": "<draw>",
+      "choice3": "<svg>",
+      "choice4": "<graphics>",
+      "answer": 1
+    },
+    {
+      "question": "لإنشاء قائمة منسدلة (Dropdown List)، نستخدم التاج؟",
+      "choice1": "<select> وبداخله <option>",
+      "choice2": "<dropdown> وبداخله <item>",
+      "choice3": "<list> وبداخله <option>",
+      "choice4": "<input type=\"dropdown\">",
+      "answer": 1
+    },
+    {
+      "question": "ما هي الخاصية التي تجعل حقل الإدخال <input> \"إجباري\"؟",
+      "choice1": "validate",
+      "choice2": "important",
+      "choice3": "required",
+      "choice4": "mandatory",
+      "answer": 3
+    },
+    {
+      "question": "ما هو التاج المستخدم لـ \"اقتباس طويل\" (Blockquote)؟",
+      "choice1": "<quote>",
+      "choice2": "<q>",
+      "choice3": "<blockquote>",
+      "choice4": "<citation>",
+      "answer": 3
+    },
+    {
+      "question": "ما الفرق بين `<strong>` و `<b>`؟",
+      "choice1": "لا يوجد فرق",
+      "choice2": "<strong> للنص العريض، و <b> للنص المهم",
+      "choice3": "<strong> للنص المهم (دلالياً)، و <b> للنص العريض (بصرياً فقط)",
+      "choice4": "<strong> للـ CSS و <b> للـ HTML",
+      "answer": 3
+    }
+  ]
+}
