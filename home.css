@@ -111,9 +111,36 @@
     background-color: #c82333;
 }
 
-/* ---------------------------------- */
-/* [!!] كود التجاوب مع الموبايل [!!] */
-/* ---------------------------------- */
+/* [!!] ---------------------------------- [!!] */
+/* [!!] كود الـ CSS الجديد للأيقونات [!!] */
+#social-links {
+  display: flex; /* يخليهم جنب بعض */
+  justify-content: center; /* يخليهم في النص */
+  gap: 2.5rem; /* مسافة بينهم */
+  margin-top: 1.5rem; /* مسافة من الاسم اللي فوق */
+}
+
+.social-icon {
+  font-size: 3.5rem; /* حجم الأيقونة */
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* تكبر شوية لما الماوس ييجي عليها */
+}
+
+/* الألوان الخاصة بكل أيقونة */
+.social-icon.whatsapp {
+  color: #25D366; /* أخضر واتساب */
+}
+.social-icon.instagram {
+  color: #C13584; /* وردي انستجرام */
+}
+/* [!!] ---------------------------------- [!!] */
+
+
+/* كود التجاوب مع الموبايل */
 @media (max-width: 768px) {
   #welcome-username {
     font-size: 2.4rem;
